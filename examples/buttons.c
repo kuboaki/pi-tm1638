@@ -66,7 +66,7 @@ int main(int argc, char *argv[])
   while(1)
     {
       uint8_t  x = tm1638_read_8buttons(t);
-      tm1638_set_8leds(t, 0, x);
+      tm1638_set_8leds(t, x, 0);
 
       delay(10);
     }
